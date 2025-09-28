@@ -15,7 +15,7 @@ public class Main {
             bankAccount.deposit(500);
             bankAccount.withdraw(200);
 
-            // Exception
+            // Exception Thrown here
             bankAccount.withdraw(600);
         } catch (InvalidAmountException | InsufficientFundsException e) {
             throw new RuntimeException(e);
